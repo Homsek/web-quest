@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web-квест КРИПТОГРАФИЯ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="page-main">
+        <div class="page-main__wrapper">
+            <div class="page-main__content content-page">
+                <section class="content-page__gradient-wrapper">
+                    <h1 class="content-page__title">что такое криптография</h1>
+                    <div class="content-page__info-card card-content">
+                        <div class="card-content__column-text">Криптография ассоциируется в первую очередь с достижениями современной науки и IT-технологий, хотя используется человечеством уже несколько тысячелетий. О криптографии (др.-греч. kryptós — скрытый, graphein — писать) чаще всего говорят как о технологии шифрования исходного сообщения в секретный код или шифр и его последующего дешифрования.</div>
+                        <div class="card-content__column-img"><img src="img/blockImage/notebook.jpg" class="card-content__img"></div>
+                    </div>
+                    <div class="content-page__tasks tasks-content">
+                        <h3 class="tasks-content__title">Криптография решает задачи:</h3>
+                        <nav class="tasks-content__list">
+                            <ul><li class="tasks-content__list-item"><p class="tasks-content__item-text">
+                                <span class="tasks-content__item-title">Конфиденциальности</span> — когда нужно передать данные так, чтобы человек, перехвативший зашифрованное сообщение, не смог узнать его содержание.
+                            </p></li></ul>
+                            <ul><li class="tasks-content__list-item"><p class="tasks-content__item-text">
+                                <span class="tasks-content__item-title">Аутентификации</span> — получатель сообщения хочет быть уверен, что оно пришло от определённой стороны, а не от кого-либо ещё.
+                            </p></li></ul>
+                            <ul><li class="tasks-content__list-item"><p class="tasks-content__item-text">
+                                <span class="tasks-content__item-title">Целостности</span>  —  получатель сообщения хочет доказательства того, что оно не было изменено третьей стороной.
+
+                            </p></li></ul>
+                            <ul><li class="tasks-content__list-item"><p class="tasks-content__item-text">
+                                <span class="tasks-content__item-title">Отказа от ответственности</span>   — предотвратить отказ автора за создание или отправку сообщения.
+                            </p></li></ul>
+                        </nav>
+                    </div>
+                </section>
+                <section class="content-page__white">
+                    <div class="content-page__white-wrapper content-white">
+                        <p class="content-white__text">
+                            Самый распространённый и часто встречающийся вид криптографии - криптография с открытым ключом. Она представляет собой асимметричную схему, в которой применяются пары ключей: открытый ключ, который зашифровывает данные, и закрытый ключ, который их расшифровывает. Открытый ключ можно распространять без ограничений, в то время как закрытый держится в тайне. Хотя ключевая пара математически связана, вычисление закрытого ключа из открытого в практическом плане невыполнимо. Каждый, у кого есть ваш открытый ключ, сможет зашифровать данные, но не сможет их расшифровать. Только человек, обладающий соответствующим закрытым ключом, может расшифровать информацию.
+                        </p>
+                    </div>
+                </section>
+                <section class="content-page__gradient-wrapper">
+                    <div class="content-page__info-card card-content">
+                        <div class="card-content__column-text"><h2 class="card-content__title">ключ</h2>некоторая величина, которая, работая в сочетании с криптоалгоритмом, производит определённый шифротекст. Ключи, как правило, — это очень большие числа. Несмотря на то, что ключевая пара математически связана, практически невозможно из открытого ключа вычислить закрытый ключ; в то же время, вычисление закрытого ключа всегда остаётся возможным, если располагать достаточным временем и вычислительными мощностями. Вот почему критически важно создавать ключ верной длины: достаточно крупный, чтобы был надёжным, но достаточно малый, чтобы оставался быстрым в работе.</div>
+                        <div class="card-content__column-img"><img src="img/blockImage/key.jpg" class="card-content__img"></div>
+                    </div>
+                    <p class="content-page__text">
+                        По современным представлениям 128-битовые симметричные ключи совершенно надёжны и не подвержены взлому, по крайней мере до тех пор, пока кто-то не построит функционирующий квантовый суперкомпьютер. 256-битовые ключи по оценкам криптологов не могут быть взломаны даже теоретически и даже на гипотетическом квантовом компьютере.
+                    </p>
+                </section>
+                <section class="content-page__white">
+                    <div class="content-page__white-wrapper content-white">
+                        <p class="content-white__text">
+                            Основой криптографии можно назвать шифр. <span>Шифр</span> — система обратимых преобразований, зависящая от некоторого секретного параметра (ключа) и предназначенная для обеспечения секретности передаваемой информации.
+                        </p>
+                        <div class="content-white__block-flex block-content">
+                            <div class="block-content__column">
+                                <h2 class="block-content__title">Квадрат Полибия</h2>
+                                <p class="block-content__text">
+                                    шифр простой замены. В данном примере будет использоваться двумерная матрица 6х6, содержащая заглавные буквы алфавита и цифры от 0 до 9.
+                                </p>
+                                <p class="block-content__text">
+                                    Сообщение: HELLO <br>
+                                    Шифротекст: 22–51–62–62–33
+                                </p>
+                            </div>
+                            <div class="block-content__column-img"><img src="img/blockImage/square.jpg" alt="" class="block-content__img"></div>
+                        </div>
+                        <div class="content-white__block-flex block-content">
+                            <div class="block-content__column-img">
+                                <img src="img/blockImage/cipher.jpg" alt="" class="block-content__img">
+                                <img src="img/blockImage/cipher2.jpg" alt="" class="block-content__img">
+                            </div>
+                            <div class="block-content__column">
+                                <h2 class="block-content__title">Шифр Цезаря</h2>
+                                <p class="block-content__text">
+                                    считается самым первым. Цезарь использовал его для кодирования сообщений своим генералам, чтобы враги из Римской Империи не смогли прочитать приказы при перехвате. Способ шифрования: алфавит сдвигается вправо или влево. Разные значения сдвига приводят к разным результатам шифровки. Число сдвига — это число букв, на которое происходит смещение в одну из сторон, для создания шифротекста.
+                                </p>
+                                <p class="block-content__text">
+                                    Сообщение: HELLO <br>
+                                    Шифротекст: KHOOT
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content-page__crossword">
+                            <iframe src="https://learningapps.org/watch?v=piwb91bda23" style="border:0px;width:100%;height:600px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+                            <iframe src="https://learningapps.org/watch?v=prnen28p323" style="border:0px;width:100%;height:650px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>                        </div>
+                    </div>
+                    <div class="content-screen__container-button">
+                        <a href="page3.html" class="content-screen__button">Завершить веб-квест</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__content content-footer">
+                ©Лучший веб квест, 2023. Все права защищены
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
